@@ -20,7 +20,7 @@ export default function App() {
         </Grid>
         {!!transactions &&
           (transactions as (ITransaction & { id: number })[])
-            .sort((a, b) => a.date - b.date)
+            .sort((a, b) => b.date - a.date)
             .map((record) => (
               <Grid item xs={12}>
                 <TransactionRecord record={record} />

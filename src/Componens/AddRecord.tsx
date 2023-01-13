@@ -16,7 +16,7 @@ export default function AddRecord() {
     onSubmit: async (values) => {
       db.transactions.add({
         description: values.description,
-        amount: parseInt(values.amount),
+        amount: Number(values.amount),
         date: values.date.unix(),
       });
     },
