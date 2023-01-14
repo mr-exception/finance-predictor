@@ -33,13 +33,16 @@ export default function Reports({ transactions }: IProps) {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography variant="body1">
-            Last 7 days: {last7days} euros ({avg7} euros avrage per day)
+            Last 7 days: {Number(last7days).toFixed(2)} euros ({avg7} euros
+            avrage per day)
           </Typography>
           <Typography variant="body1">
-            Last 30 days: {last30days} euros ({avg30} euros avrage per day)
+            Last 30 days: {Number(last30days).toFixed(2)} euros ({avg30} euros
+            avrage per day)
           </Typography>
           <Typography variant="body1">
-            Last 90 days: {last90days} euros ({avg90} euros avrage per day)
+            Last 90 days: {Number(last90days).toFixed(2)} euros ({avg90} euros
+            avrage per day)
           </Typography>
         </Grid>
       </Grid>
